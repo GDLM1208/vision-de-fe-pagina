@@ -3,7 +3,35 @@ html {
     background-color:rgb(233, 233, 233);
 }
 
+header {
+    position: relative;
+    top: 10%;
+}
+
 #header {
+    position: relative;
+    left: 100px;
+    padding-bottom: 40px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+#logo {
+    position: absolute;
+    width: 100px;
+}
+
+#navbar {
+    list-style-type: none;
+}
+
+#navbar>li {
+    background-color: #F6E3CA;
+    float: left;
+    text-align: center;
+    width: 5em;
+}
+
+h1 {
+    margin: 0;
 }
