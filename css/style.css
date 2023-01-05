@@ -32,12 +32,9 @@ header {
     width: 5em;
 }
 
-h1 {
-    margin: 0;
-}
 header{
     color: rgb(45, 228, 241);
-    font-size:50px;
+    font-size: 40px;
     font-weight:bold;
 
 }
