@@ -1,6 +1,6 @@
 html {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color:rgb(233, 233, 233);
+    background-color:rgb(99, 154, 161);
 }
 
 header {
@@ -14,6 +14,7 @@ header {
     padding-bottom: 40px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    font-family:'Courier New', Courier, monospace;
 }
 
 #logo {
@@ -26,7 +27,7 @@ header {
 }
 
 #navbar>li {
-    background-color: #F6E3CA;
+    background-color: #e92d14;
     float: left;
     text-align: center;
     width: 5em;
