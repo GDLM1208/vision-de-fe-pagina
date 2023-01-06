@@ -12,19 +12,28 @@ header {
 }
 
 #logo {
-    width: 400px;
-    padding: 0px;
-    margin-right: 25%;
+    width: 30%;
+    margin-left: 20%;
 }
 
 .sliderItem {
-    margin-top: 50px;
+    margin-top: 5px;
     width: 100%;
+}
+
+.navbar-right {
+    box-shadow: 0px 5px 5px 2.5px rgba(0,0,0,0.75);
+}
+
+.navbar {
+    position: sticky;
+    top: 0px;
 }
 
 .navbar-left {
     display: flex;
     align-items: center;
+    background-color:rgb(99, 154, 161);
 }
 
 .navbar-left div {
