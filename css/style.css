@@ -12,7 +12,14 @@ header {
 }
 
 #logo {
-    width: 100px;
+    width: 400px;
+    padding: 0px;
+    margin-right: 25%;
+}
+
+.sliderItem {
+    margin-top: 50px;
+    width: 100%;
 }
 
 .navbar-left {
