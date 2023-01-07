@@ -16,8 +16,15 @@ header {
     margin-left: 20%;
 }
 
-.sliderItem {
-    margin-top: 5px;
+.slider {
+    display: grid;
+    width: 100%;
+    height: 38%;
+    overflow: hidden;
+}
+
+.slider img {
+    top: 10px;
     width: 100%;
 }
 
@@ -47,3 +54,6 @@ header {
     padding: 10px;
 }
 
+#cuerpo {
+    display: grid;
+}
