@@ -1,3 +1,7 @@
+:root {
+    --max-slider: 225px;
+}
+
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
@@ -18,11 +22,12 @@ header {
 
 .slider {   
     position: relative;
-    z-index: 1;
+    z-index: 0;
     display: grid;
     width: 100%;
     height: 38%;
     justify-items: center;
+    scroll-snap-type: x mandatory;
 }
 
 .slider img {
@@ -72,36 +77,100 @@ header {
 }
 
 .content {
-    margin-top: 29%;
+    margin-top: 10%;
 }
 
-.flecha {
-    cursor: pointer;
+.slide {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    height: var(--max-slider);
+    align-items: center;
+}
+
+.slide-inner {
+    position: relative;
+    overflow: hidden;
+    width: 50%;
+}
+.slide-open:checked + .slide-item {
+    position: static;
+    opacity: 100;
+}
+.slide-item {
     position: absolute;
-    z-index: 2;
-    margin-top: 12%;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
 }
-
-/* Estilo para la flecha izquierda */
-.flecha-izquierda {
-    left: 25%;
-    border-radius: 3px 0 0 3px;
+.slide-item img {
+    display: block;
+    height: auto;
+    max-width: 100%;
 }
-
-/* Estilo para la flecha derecha */
-.flecha-derecha {
-    right: 25%;
-    border-radius: 3px 0 0 3px;
+.slide-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
 }
-
-/* Estilo para las flechas al pasar el mouse por encima */
-.flecha:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+.slide-control.prev {
+    left: 2%;
+}
+.slide-control.next {
+    right: 2%;
+}
+.slide-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+#slide-1:checked ~ .control-1,
+#slide-2:checked ~ .control-2,
+#slide-3:checked ~ .control-3 {
+    display: block;
+}
+.slide-indicador {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+.slide-indicador li {
+    display: inline-block;
+    margin: 0 5px;
+}
+.slide-circulo {
+    color: #828282;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+.slide-circulo:hover {
+    color: #aaaaaa;
+}
+#slide-1:checked ~ .control-1 ~ .slide-indicador 
+     li:nth-child(1) .slide-circulo,
+#slide-2:checked ~ .control-2 ~ .slide-indicador 
+      li:nth-child(2) .slide-circulo,
+#slide-3:checked ~ .control-3 ~ .slide-indicador 
+      li:nth-child(3) .slide-circulo {
+    color: #428bca;
 }
