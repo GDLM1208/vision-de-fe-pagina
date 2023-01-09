@@ -1,11 +1,11 @@
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
-    background-color:rgb(99, 154, 161);
+    background-color:rgb(125, 208, 219);
 }
 
 header {
-    color: rgb(45, 228, 241);
+    color: rgb(125, 208, 219);
     font-size: 30px;
     font-weight:bold;
     margin-right: 100px;
@@ -20,12 +20,13 @@ header {
     display: grid;
     width: 100%;
     height: 38%;
-    overflow: hidden;
+    display: inline-block;
+    text-align: right;
 }
 
 .slider img {
     top: 10px;
-    width: 100%;
+    width: 50%;
 }
 
 .navbar-right {
@@ -40,7 +41,7 @@ header {
 .navbar-left {
     display: flex;
     align-items: center;
-    background-color:rgb(99, 154, 161);
+    background-color:rgb(125, 208, 219);
 }
 
 .navbar-left div {
