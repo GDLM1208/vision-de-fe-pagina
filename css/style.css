@@ -64,7 +64,7 @@ header {
 }
 
 .navbar-left > * {
-    padding: 1% 40px;
+    padding: 1% 1.75%;
 }
 
 #cuerpo {
@@ -72,22 +72,24 @@ header {
 }
 
 .content {
-    margin-top: 10%;
+    margin-top: 8%;
     color: aliceblue;
 }
 
 .slide {
-    margin-top: 20px;
+    position: relative;
+    margin-top: 85px;
     display: flex;
     justify-content: center;
+    width: 100%;
     height: var(--max-slider);
-    align-items: center;
+    align-items: center;    
 }
 
 .slide-inner {
     position: relative;
     overflow: hidden;
-    width: 50%;
+    width: 100%;
 }
 .slide-open:checked + .slide-item {
     position: static;
