@@ -69,18 +69,19 @@ header {
 
 #cuerpo {
     display: grid;
+    background-color:lightsteelblue;
+    color: rgb(9, 9, 78);
 }
 
 .content {
     display: grid;
     margin-top: 12%;
-    color: aliceblue;
     font-size: 20px;
 }
 
 .slide {
     position: relative;
-    margin-top: 200px;
+    margin-top: 133px;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -189,4 +190,14 @@ header {
 
 .video {
     justify-self: center;
+}
+.pie-pagina {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    color: white;
+}
+
+.pie-pagina div {
+    text-align: center;
 }
