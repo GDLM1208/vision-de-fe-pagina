@@ -72,6 +72,7 @@ header {
 }
 
 .content {
+    display: grid;
     margin-top: 12%;
     color: aliceblue;
     font-size: 20px;
@@ -172,4 +173,15 @@ header {
 #slide-3:checked ~ .control-3 ~ .slide-indicador 
       li:nth-child(3) .slide-circulo {
     color: #428bca;
+}
+
+.horario {
+    justify-self: center;
+    position: relative;
+    margin-top: 15px;
+}
+
+.horario td {
+    background-color: #e92d14;
+    padding: 25px;
 }
