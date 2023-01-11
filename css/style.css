@@ -179,9 +179,14 @@ header {
     justify-self: center;
     position: relative;
     margin-top: 15px;
+    margin-bottom: 25px;
 }
 
 .horario td {
     background-color: #e92d14;
     padding: 25px;
+}
+
+.video {
+    justify-self: center;
 }
