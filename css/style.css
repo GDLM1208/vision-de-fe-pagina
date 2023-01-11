@@ -16,8 +16,8 @@ header {
 }
 
 #logo {
-    width: 30%;
-    margin-left: 10%;
+    width: 19%;
+    margin-left: 20%;
 }
 
 .slider {   
@@ -64,7 +64,7 @@ header {
 }
 
 .navbar-left > * {
-    padding: 1% 1.75%;
+    padding: 0.9% 2.15%;
 }
 
 #cuerpo {
@@ -72,13 +72,13 @@ header {
 }
 
 .content {
-    margin-top: 8%;
+    margin-top: 20%;
     color: aliceblue;
 }
 
 .slide {
     position: relative;
-    margin-top: 85px;
+    margin-top: 200px;
     display: flex;
     justify-content: center;
     width: 100%;
