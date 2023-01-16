@@ -184,3 +184,9 @@ body {
 #vacio {
     background-color: lightsteelblue;
 }
+.content h1{
+    text-align: center;
+}
+#info{
+    text-align: center;
+}
