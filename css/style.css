@@ -30,10 +30,12 @@ body {
 }
 
 .navbar-left div {
-    background-color:#428bca;
+    background-color: rgb(9, 9, 78);
     float: left;
     text-align: center;
     width: 5em;
+    color: #fff;
+    font-weight: bold;
 }
 
 .navbar-left div:hover {
@@ -178,4 +180,7 @@ body {
 
 .pie-pagina div {
     text-align: center;
+}
+#vacio {
+    background-color: lightsteelblue;
 }
