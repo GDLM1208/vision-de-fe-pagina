@@ -36,12 +36,12 @@ body {
     width: 5em;
     color: #fff;
     font-weight: bold;
-    transform: box-shadow 5s;
+    transform: box-shadow 2s;
 }
 
 .navbar-left div:hover {
     cursor: pointer;
-    box-shadow: red;
+    box-shadow: 0 7.5px red;
 }
 
 .navbar-left > * {
