@@ -192,6 +192,10 @@ body {
 .content h1{
     text-align: center;
 }
+.content p,li{
+    font-size: 25px;
+}
 #info{
     text-align: center;
+    font-size: 25px;
 }
