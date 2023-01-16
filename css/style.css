@@ -32,11 +32,10 @@ body {
 .navbar-left div {
     background-color: rgb(9, 9, 78);
     float: left;
-    text-align: center;
-    width: 5em;
+    width: fit-content;
+    padding-bottom: 5px;
     color: #fff;
     font-weight: bold;
-    transform: box-shadow 2s;
 }
 
 .navbar-left div:hover {
@@ -45,7 +44,7 @@ body {
 }
 
 .navbar-left > * {
-    padding: 0.9% 2.15%;
+    margin: 0.9% 2.15%;
 }
 
 #cuerpo {
