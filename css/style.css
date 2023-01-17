@@ -198,3 +198,7 @@ body {
     text-align: center;
     font-size: 25px;
 }
+
+#misi {
+    justify-self: center;
+}
