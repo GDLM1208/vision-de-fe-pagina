@@ -165,11 +165,13 @@ body {
     position: relative;
     margin-top: 15px;
     margin-bottom: 25px;
+    font-size: 50px;
 }
 
 .horario td {
-    background-color: #e92d14;
-    padding: 25px;
+    background-color: lightsteelblue;
+    padding: 25px 100px;
+    border: 5px solid white;
 }
 
 .video-container {
@@ -205,4 +207,5 @@ body {
 
 #misi {
     justify-self: center;
+    width: 1200px;
 }
