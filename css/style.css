@@ -166,6 +166,7 @@ body {
     margin-top: 15px;
     margin-bottom: 25px;
     font-size: 50px;
+    border-collapse: collapse;
 }
 
 .horario td {
@@ -189,7 +190,8 @@ body {
 }
 
 .pie-pagina div {
-    text-align: center;
+    justify-items: center;
+    display: grid;
 }
 #vacio {
     background-color: lightsteelblue;
@@ -208,4 +210,15 @@ body {
 #misi {
     justify-self: center;
     width: 1200px;
+}
+#redes {
+    height: 50px;
+    
+}
+.iconos {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px;
+}
+.pie-pagina h1{
+    text-align: center;
 }
