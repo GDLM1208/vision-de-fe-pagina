@@ -1,22 +1,29 @@
-window.onload = function() {
-    var mision = document.getElementById("etiqMision");;
-    var vision = document.getElementById("etiqVision");;
-    var horarios = document.getElementById("etiqHorarios")
-    var misionSection = document.getElementById("mision");
-    var visionSection = document.getElementById("vision");
-    var horariosSection = document.getElementById("horarios");
-    
-    mision.onclick = moverSeccion(misionSection.getBoundingClientRect().top);
-    vision.onclick = moverSeccion(visionSection.getBoundingClientRect().top);
-    horarios.onclick = moverSeccion(horariosSection.getBoundingClientRect().top);
+var lastSection = null;
 
-    function moverSeccion(position) {
-        console.log(position);
-        window.scrollTo({
-            top: position - 225,
-            behavior: "smooth"
-        });
-    };
-};
+function scrollToSection(sectionId) {
+    if (lastSection === sectionId) {
+        return;
+    }
+    // Obtener la posición de la sección correspondiente
+    var section = document.getElementById(sectionId);
+    var position = section.offsetTop;
+    var sectionSize;
 
+    switch (sectionId) {
+        case "vision":
+            sectionSize = 125;
+            break;
+        case "horarios":
+            sectionSize = 200;
+            break;
+        default:
+            sectionSize = 0;
+    }
+    console.log("position: " + position + "; sectionSize: " + sectionSize);
+    window.scrollTo({
+        top: position - sectionSize,
+        behavior: "smooth"
+    });
 
+    lastSection = sectionId;
+}
