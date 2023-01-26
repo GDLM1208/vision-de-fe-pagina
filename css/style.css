@@ -36,7 +36,7 @@ body {
 .navbar-left div {
     background-color: rgb(9, 9, 78);
     float: left;
-    width: fit-content;
+    width: min-content;
     padding-bottom: 5px;
     color: #fff;
     font-weight: bold;
@@ -44,7 +44,7 @@ body {
 
 .navbar-left div:hover {
     cursor: pointer;
-    box-shadow: 0 7.5px rgb(235, 225, 225);
+    box-shadow: 0 7.5px white;
 }
 
 .navbar-left > * {
@@ -53,7 +53,7 @@ body {
 
 #cuerpo {
     display: grid;
-    background-color:lightsteelblue;
+    background-color:rgb(255 255 255);
     color: rgb(9, 9, 78);
 }
 
@@ -178,7 +178,7 @@ body {
 .video-container {
     display: flex;
     height:fit-content;
-    padding: 15px;
+    padding: 1px;
     justify-content: center;
 }
 
@@ -187,6 +187,7 @@ body {
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     color: white;
+    background-color: rgba(125 125 125);
 }
 
 .pie-pagina div {
