@@ -181,6 +181,20 @@ body {
     font-size: 30px;
 }
 
+.horario h4 {
+    margin: 0;
+}
+#titulos-horario{
+    font-weight: normal;
+    font-size: 20px;
+}
+#titulos-horario td{
+    text-align: center;
+    font-size: 20px;
+    padding: 0;
+    background-color: white;
+}
+
 .video-container {
     display: flex;
     height:fit-content;
