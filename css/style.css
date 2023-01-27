@@ -161,17 +161,17 @@ body {
 }
 
 .horario {
-    justify-self: center;
+    justify-self: right;
     position: relative;
     margin-top: 15px;
     margin-bottom: 25px;
-    font-size: 50px;
-    border-collapse: collapse;
+    font-size: 30px;
+    border-spacing: 50px 5px;
 }
 
 .horario td {
     background-color: lightsteelblue;
-    padding: 25px 100px;
+    padding: 20px 60px;
     border: 5px solid white;
 }
 
@@ -195,7 +195,7 @@ body {
     display: grid;
 }
 #vacio {
-    background-color: lightsteelblue;
+    visibility: hidden;
 }
 .content h1{
     text-align: center;
