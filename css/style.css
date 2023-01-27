@@ -202,6 +202,7 @@ body {
 }
 .content p,li{
     font-size: 25px;
+    margin-bottom: 0;
 }
 #info{
     text-align: center;
