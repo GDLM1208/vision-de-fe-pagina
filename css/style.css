@@ -160,6 +160,11 @@ body {
     color: #428bca;
 }
 
+#horarios-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 .horario {
     justify-self: right;
     position: relative;
@@ -173,6 +178,7 @@ body {
     background-color: lightsteelblue;
     padding: 20px 60px;
     border: 5px solid white;
+    font-size: 30px;
 }
 
 .video-container {
