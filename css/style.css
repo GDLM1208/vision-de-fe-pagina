@@ -261,3 +261,7 @@ body {
 #informacion-pie div{
     justify-self: flex-end;
 }
+#oremosjuntos {
+    width: 600px;
+    justify-self: center;
+}
