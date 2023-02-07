@@ -9,6 +9,7 @@ html {
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
+    width: fit-content;
     background-color:rgb(9, 9, 78);
 }
 
@@ -184,6 +185,21 @@ body {
 .horario h4 {
     margin: 0;
 }
+
+.horarioV {
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-size: 25px;
+    border-spacing: 50px 25px;
+}
+
+.horarioV td {
+    background-color: aquamarine;
+    padding: 5px 15px;
+    text-align: center;
+}
+
 #titulos-horario{
     font-weight: normal;
     font-size: 20px;
