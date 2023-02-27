@@ -176,7 +176,8 @@ body {
 }
 
 .horario td {
-    background-color: lightsteelblue;
+    background-color:rgb(40, 42, 146);
+    color: #fff;
     padding: 20px 60px;
     border: 5px solid white;
     font-size: 30px;
