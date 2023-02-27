@@ -255,7 +255,6 @@ body {
 }
 .iconos {
     grid-template-columns: 100px 100px 100px;
-    grid-template-rows: 200px 200px;
     justify-self: center;
 }
 .pie-pagina h1{
@@ -268,6 +267,7 @@ body {
 #mapa{
     width: 200px;
     justify-self: center;
+    margin-bottom: 25px;
 }
 #informacion-pie {
     text-align: end;
