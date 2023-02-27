@@ -8,7 +8,7 @@ html {
 
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin: 0;
+    margin: 0;  
     width: fit-content;
     background-color:rgb(9, 9, 78);
 }
@@ -60,6 +60,7 @@ body {
 
 .content {
     display: grid;
+    margin-left: 15px;
     margin-top: 12%;
     font-size: 20px;
 }
@@ -176,7 +177,8 @@ body {
 }
 
 .horario td {
-    background-color: lightsteelblue;
+    background-color:rgb(40, 42, 146);
+    color: #fff;
     padding: 20px 60px;
     border: 5px solid white;
     font-size: 30px;
@@ -191,13 +193,15 @@ body {
     margin-top: 15px;
     margin-bottom: 25px;
     font-size: 25px;
-    border-spacing: 50px 25px;
+    border-spacing: 115px 25px;
 }
 
 .horarioV td {
-    background-color: aquamarine;
-    padding: 5px 15px;
+    background-color: rgb(40, 42, 146);
+    color:#fff;
+    padding: 10px 5px;
     text-align: center;
+    font-family:"Arial Narrow",Arial,sans-serif;
 }
 
 #titulos-horario{
