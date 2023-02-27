@@ -191,13 +191,15 @@ body {
     margin-top: 15px;
     margin-bottom: 25px;
     font-size: 25px;
-    border-spacing: 50px 25px;
+    border-spacing: 115px 25px;
 }
 
 .horarioV td {
-    background-color: aquamarine;
-    padding: 5px 15px;
+    background-color: rgb(40, 42, 146);
+    color:#fff;
+    padding: 10px 5px;
     text-align: center;
+    font-family:"Arial Narrow",Arial,sans-serif;
 }
 
 #titulos-horario{
