@@ -14,13 +14,13 @@
         <div class="navbar-left">
             <img id="logo" src="img/LogoADP.png">
             <div onclick="scrollToSection('vision')">¿QUIENES SOMOS?</div>
-            <div onclick="scrollToSection('horarioTitulo')">HORARIOS</div>
+            <div onclick="scrollToSection('horarios-div')">HORARIOS</div>
             <div onclick="scrollToSection('oremosjuntos')">OREMOS JUNTOS</div>
             <div><a href="https://open.spotify.com/show/6fS3gI66AHjFXQqFuVhanh" target="_blank">PREDICAS</a></div>
             <div><a href="https://www.facebook.com/ccvisiondefe/live_videos" target="_blank">VIVO</a></div>
             <div><a href="galeria.html" target="_blank">GALERÍA</a></div>
         </div>
-    </div>
+    </div>  
     <div id="cuerpo">
         <div class="slide">
             <div class="slide-inner">
@@ -71,49 +71,52 @@
             <p>Cumplir la gran Comisión de Jesucristo, predicando el evangelio completo, lazos fraternos y administrando eficazmente los recursos que Dios nos ha confiado, bajo la dirección del Espíritu Santo a través de: </p>
             <img id="misi" src="img/mision.png">
             <div id="horarios-div">
-                <h1 id="horavir">HORARIOS  VIRTUALES:</h1>
-                <h1 id="horarioTitulo" style="text-align: center;">HORARIOS PRESENCIALES:</h1>
-                <table class="horarioV">
-                    <tr>
-                        <th>Fecha</th>
-                        <th>Hora</th>
-                    </tr>
-                    <tr>
-                        <td>Lunes</td>
-                        <td>6:00 am</td>
-                        <td>
-                            <img width="30px" height="30px" src="img/facebook.png">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Martes</td>
-                        <td>6:00 am</td>
-                        <td>
-                            <img width="30px" height="30px" src="img/facebook.png">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Miercoles</td>
-                        <td>6:00 am</td>
-                        <td>
-                            <img width="30px" height="30px" src="img/facebook.png">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Jueves</td>
-                        <td>6:00 am</td>
-                        <td>
-                            <img width="30px" height="30px" src="img/facebook.png">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Viernes</td>
-                        <td>6:00 am</td>
-                        <td>
-                            <img width="30px" height="30px" src="img/facebook.png">
-                        </td>
-                    </tr>
-                </table>
+                <div>
+                    <h1 id="horavir">HORARIOS  VIRTUALES:</h1>
+                    <table class="horarioV">
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Hora</th>
+                        </tr>
+                        <tr>
+                            <td>Lunes</td>
+                            <td>6:00 am</td>
+                            <td id="fb">
+                                <img width="30px" height="30px" src="img/facebook.png">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Martes</td>
+                            <td>6:00 am</td>
+                            <td>
+                                <img width="30px" height="30px" src="img/facebook.png">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Miercoles</td>
+                            <td>6:00 am</td>
+                            <td>
+                                <img width="30px" height="30px" src="img/facebook.png">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Jueves</td>
+                            <td>6:00 am</td>
+                            <td>
+                                <img width="30px" height="30px" src="img/facebook.png">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Viernes</td>
+                            <td>6:00 am</td>
+                            <td>
+                                <img width="30px" height="30px" src="img/facebook.png">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <h1 id="horarioTitulo" style="text-align: center;">HORARIOS PRESENCIALES:</h1>
                 <table class="horario" id="horarios">
                     <tr>
                         <th>
@@ -155,15 +158,23 @@
                         <td>5:00 p.m</td>
                     </tr>
                 </table>
+                </div>
             </div>
 
             <h1 id="oremosjuntos">OREMOS JUNTOS</h1>
             <img id="oremosjuntos" src="img/oremosjuntos.jpeg">
             <h1 id="predicas">PREDICAS PASTOR ALVARO RUIZ</h1>
-            <p id="info">Vision de Fe YOUTUBE</p>
+            
         </div>
         <div class="video-container">
-            <iframe class="video" width="1200" height="720" src="https://www.youtube.com/embed/UCKSCUESfXE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div>
+                <p id="info">Vision de Fe YOUTUBE</p>
+                <iframe style="border-radius: 12px;" class="video" width="100%" height="360px" src="https://www.youtube.com/embed/UCKSCUESfXE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div>
+                <p id="info">Vision de Fe SPOTIFY</p>
+                <iframe style="border-radius: 12px;" src="https://open.spotify.com/embed/show/6fS3gI66AHjFXQqFuVhanh?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
         </div>
     </div>
     <div class="pie-pagina">

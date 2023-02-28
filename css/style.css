@@ -169,7 +169,6 @@ body {
 }
 
 .horario {
-    justify-self: right;
     position: relative;
     margin-top: 15px;
     margin-bottom: 25px;
@@ -194,13 +193,13 @@ body {
     margin-top: 15px;
     margin-bottom: 25px;
     font-size: 25px;
-    border-spacing: 115px 25px;
+    border-spacing: 2em 25px;
 }
 
 .horarioV td {
     background-color: rgb(40, 42, 146);
     color:#fff;
-    padding: 10px 5px;
+    padding: 10px 2em;
     text-align: center;
     font-family:"Arial Narrow",Arial,sans-serif;
 }
@@ -217,7 +216,9 @@ body {
 }
 
 .video-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
     height:fit-content;
     padding: 15px;
     justify-content: center;
@@ -294,8 +295,18 @@ body {
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1500px) {
     #horarios-div {
         display: block;
+    }
+    .horario {
+        font-size: 25px;
+        width: 100%;
+        border-spacing: 5em 20px;
+    }
+    .horarioV{
+        font-size: 25px;
+        width: 100%;
+        border-spacing: 7em 20px;
     }
 }
