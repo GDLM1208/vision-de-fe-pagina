@@ -1,5 +1,6 @@
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
     margin: 0;
 
 }
@@ -13,9 +14,21 @@ body {
     display: grid;
     background-color:rgb(9, 9, 78);
     padding: 20px 0px;
+    font-size: 70px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.navbar-left>div {
+    margin-top: -70px;
+
 }
 
 #logo {
-    width: 20em;
-    justify-self: center;
+    width: 3em;
+    margin-left: 10px;
+}
+#versiculo {
+    font-size: 13px;
+    margin-top: 15px;
 }

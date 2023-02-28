@@ -286,11 +286,11 @@ body {
     justify-self: center;
 }
 
-@media screen and (min-width:2000px) {
+@media screen and (min-width:1800px) {
     #informacion-pie {
         text-align: end;
         grid-column: 1/3;
-        grid-template-columns: 50% 35%;
+        grid-template-columns: 50% 615px;
     }
 }
 
