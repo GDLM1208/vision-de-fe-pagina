@@ -32,3 +32,13 @@ body {
     font-size: 13px;
     margin-top: 15px;
 }
+
+#galeria {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imagen {
+    margin: 10px 10px;
+    width: 48.5%;
+}
