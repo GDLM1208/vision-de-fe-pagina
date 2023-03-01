@@ -1,3 +1,6 @@
+var imagen
+
+
 function scrollToSection(sectionId) {
     // Obtener la posición de la sección correspondiente
     var section = document.getElementById(sectionId);
@@ -16,6 +19,11 @@ function scrollToSection(sectionId) {
     lastSection = sectionId;
 }
 function agrandarImagen(imagen) {
-    imagen.style.width = "400px";
-    imagen.style.height = "400px";
+    var origen = imagen.src;
+    var imagenG = document.getElementsByClassName("imagenG");
+    var marco = document.getElementsByClassName("marcoG");
+    imagenG.src = origen;   
+    console.log(imagenG);
+    console.log(marco);
+    marco.style = "display: grid";
 }
