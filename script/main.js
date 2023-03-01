@@ -15,4 +15,7 @@ function scrollToSection(sectionId) {
 
     lastSection = sectionId;
 }
-
+function agrandarImagen(imagen) {
+    imagen.style.width = "400px";
+    imagen.style.height = "400px";
+}
