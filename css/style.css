@@ -163,6 +163,22 @@ body {
     color: #428bca;
 }
 
+#fotopastores {
+    margin-top: -35px;
+   justify-self: center; 
+}
+
+#infopas {
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    margin-top: -39px;
+}
+#facepas {
+    justify-self: center;
+    height: 40px;
+}
+
 #horarios-div {
     display: grid;
     grid-template-columns: 1fr 1fr;
