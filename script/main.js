@@ -15,3 +15,4 @@ function scrollToSection(sectionId) {
 
     lastSection = sectionId;
 }
+

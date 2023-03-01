@@ -2,7 +2,7 @@ body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     margin: 0;
-
+    background-color: thistle;
 }
 
 .navbar {
@@ -36,9 +36,12 @@ body {
 #galeria {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .imagen {
-    margin: 10px 10px;
-    width: 48.5%;
+    border: solid 15px white;
+    margin: 25px 30px;
+    width: 15%;
+    transition: all ;
 }
