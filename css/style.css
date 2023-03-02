@@ -293,7 +293,7 @@ body {
 #informacion-pie {
     text-align: end;
     grid-column: 1/3;
-    grid-template-columns: 55% 31%;
+    grid-template-columns: 30% 25% 31%;
 }
 #informacion-pie div{
     justify-self: flex-end;
