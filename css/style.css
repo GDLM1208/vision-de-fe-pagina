@@ -293,11 +293,29 @@ body {
 #informacion-pie {
     text-align: end;
     grid-column: 1/3;
-    grid-template-columns: 30% 25% 31%;
+    grid-template-columns: 33.5% 27% 22.5em;
 }
 #informacion-pie div{
     justify-self: flex-end;
 }
+
+#donaciones {
+    background-color: rgba(51 51 51);
+    color: rgba(244, 244, 244, 0.75);
+    font-size: 25px;
+    height: fit-content;
+    margin-top: 30px;
+    padding: 0.5em 1em;
+    border-radius: 12px;
+    border: 2px solid gray;
+    transition-duration: 0.5s;
+}
+#donaciones:hover {
+    cursor: pointer;
+    color: whitesmoke;
+    background-color: rgb(9, 9, 78);
+}
+
 #oremosjuntos {
     width: 600px;
     justify-self: center;
@@ -307,7 +325,7 @@ body {
     #informacion-pie {
         text-align: end;
         grid-column: 1/3;
-        grid-template-columns: 50% 615px;
+        grid-template-columns: 30% 28% 520px;
     }
 }
 
