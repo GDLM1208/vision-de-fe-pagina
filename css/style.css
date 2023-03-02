@@ -273,11 +273,19 @@ body {
 }
 #redes {
     height: 50px;
-    
+    width: 50px;
+    margin-top: -30px;
 }
 .iconos {
     grid-template-columns: 100px 100px 100px;
-    justify-self: center;
+    margin-top: -80px;
+}
+#tituloIconos {
+    grid-column: 1/4;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
 }
 .pie-pagina h1{
     text-align: center;
@@ -288,12 +296,12 @@ body {
 }
 #mapa{
     width: 200px;
-    margin-top: -15px;
+    margin-top: -90px;
 }
 #informacion-pie {
-    text-align: end;
+    text-align: center;
     grid-column: 1/3;
-    grid-template-columns: 33.5% 27% 22.5em;
+    grid-template-columns: 30% 27% 30%;
 }
 #informacion-pie div{
     justify-self: flex-end;
@@ -319,14 +327,6 @@ body {
 #oremosjuntos {
     width: 600px;
     justify-self: center;
-}
-
-@media screen and (min-width:1800px) {
-    #informacion-pie {
-        text-align: end;
-        grid-column: 1/3;
-        grid-template-columns: 30% 28% 520px;
-    }
 }
 
 @media screen and (max-width: 1500px) {
