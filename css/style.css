@@ -316,6 +316,7 @@ body {
     border-radius: 12px;
     border: 2px solid gray;
     transition-duration: 0.5s;
+    box-shadow: 0.5em 0.5em 1em rgba(0,0,0,0.5);
 }
 #donaciones:hover {
     cursor: pointer;
@@ -327,7 +328,7 @@ body {
     text-decoration: none;
 }
 #donaciones a:hover {
-    color: whitesmoke;  
+    color: whitesmoke;
 }
 
 #oremosjuntos {
