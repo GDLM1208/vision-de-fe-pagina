@@ -309,7 +309,6 @@ body {
 
 #donaciones {
     background-color: rgba(51 51 51);
-    color: rgba(244, 244, 244, 0.75);
     font-size: 25px;
     height: fit-content;
     margin-top: 30px;
@@ -320,8 +319,15 @@ body {
 }
 #donaciones:hover {
     cursor: pointer;
-    color: whitesmoke;
     background-color: rgb(9, 9, 78);
+}
+
+#donaciones a{
+    color: rgba(244, 244, 244, 0.75);
+    text-decoration: none;
+}
+#donaciones a:hover {
+    color: whitesmoke;  
 }
 
 #oremosjuntos {
