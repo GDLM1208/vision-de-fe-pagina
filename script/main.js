@@ -1,6 +1,7 @@
 const images = document.querySelectorAll(".image");
 const imageDialog = document.getElementById("imageDialog")
 const dialogContent = document.getElementById("dialogContent")
+const closeDialog = document.getElementById("closeDialog")
 
 images.forEach((image) => {
     image.addEventListener("click", () => {
@@ -12,6 +13,10 @@ images.forEach((image) => {
 
 imageDialog.addEventListener("click", (event) => {
     if (event.target === imageDialog ) imageDialog.close()
+})
+
+closeDialog.addEventListener("click", () => {
+    imageDialog.close()
 })
 
 function scrollToSection(sectionId) {

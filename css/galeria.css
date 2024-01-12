@@ -36,29 +36,93 @@ body {
 }
 
 #galeria {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
     justify-content: center;
 }
 
-.image {
-    border: solid 15px white;
-    margin: 25px 30px;
-    width: 15%;
-    transition: transform 0.5s ease-in-out;
+.frame {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    margin-right: 3em;
+    margin-bottom: 3em;
 }
-.image:hover {
-    transform: scale(1.25);
+
+.image {
+    max-width: 75%;
+    max-height: 225px;
+}
+
+.frame { transition: transform 0.5s ease-in-out; }
+
+.frame:hover {
+    transform: scale(1.18);
     cursor: pointer;
 }
 
 dialog {
     width: 50%;
+    max-height: 90%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.image-container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
 }
 
 #dialogContent {
-    width: 100%;
-    height: fit-content;
-    justify-self: center;
-    align-self: center;
+    max-width: 90%;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#closeDialog {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+
+#closeDialog:focus {
+    outline: none;
+}
+
+#closeDialog:hover {
+    background-color: #666666;
+}
+
+@media screen and (max-width: 768px) {
+    #galeria {
+        grid-template-columns: 85%;
+    }
+    .frame {
+        margin-right: 0;
+    }
+    .image {
+        max-width: 90%;
+        max-height: 25em;
+    }
+    dialog {
+        width: 90%;
+    }
+    
 }
